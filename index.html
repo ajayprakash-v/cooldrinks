@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<script src="gsap.js"></script>
+	<script src="scrolltrigger.js"></script>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<section id="sec1" style="height: 130vh;">
+	<div id="pinkback" style="background-color: hsl(10, 36%, 84%);width: 100%;height: 100%;position: absolute;z-index: -1;"></div>
+	<img src="/images/star.png" alt="" style="position: absolute;width: 10vw;left: 10vw;top: 5vw;">
+	<img src="/images/star.png" alt="" style="position: absolute;width: 5vw;right: 10vw;bottom: 0vw;">
+<div class="container h-100">
+	<nav id="nav" class="bg-light d-flex justify-content-between align-items-center p-2 m-2 position-fixed" id="nav" style="z-index: 100;width: 85%;border: 5px solid;border-radius: 30px;">
+		<div class="d-flex align-items-center">
+			<div style="width: 2vw;height: 2vw;background-color: black;border-radius: 50%;min-height: 20px;min-width: 20px;"></div>
+			<a class="ms-2" href="#sec1" style="font-size: 1.5vw;">Soda</a>
+		</div>
+		<div class="d-flex justify-content-around" style="width: 60%;">
+		<a href="#sec2">WHY TO USE</a>
+		<a href="#sec3">PRODUCTS</a>
+		<a href="#sec4">HOW TO USE</a>
+		<a href="#sec5">REVIEWS</a>
+		<a href="#sec6">ARICALES</a>
+	</div>
+		<button style="border-radius: 50%;border: 2px solid black;"><img src="/images/cart.png" alt="" style="width: 2vw;min-width: 20px;"></button>
+	</nav>
+
+	<div class="d-flex h-100" style="padding-top: 5vw;display: grid;place-items: center;">
+		<div>
+			<h1 id="cool">cool</h1>
+			<img src="/images/sub2.png" alt="" style="position: absolute;width: 20vw;">
+		</div>
+		<div>
+			<button style="position: absolute;bottom: 3vw;left: 47vw;z-index: 10;padding: 1vw;font-family: f1;background-color: black;border: none;border-radius: 30px;color: white;">SHOW ALL PRODUCT</button>
+			<img src="/images/sun.png" alt="" style="position: absolute;top: 15vw;left: 32vw;width: 40vw;" id="sun">
+			<img src="/images/can1.png" alt="" style="position: absolute;top: 10vw;left: 37vw;width: 30vw;filter: drop-shadow(20px 20px 10px rgba(0,0,0,.5));" id="can">
+		</div>
+		<div style="margin-left: 30vw;">
+			<h1 id="tsun">sun</h1>
+			<img src="/images/sub1.png" alt="" style="position: absolute;width: 20vw;top: 5vw;right: -5vw;">
+		</div>
+	</div>
+</div>
+</section>
+<section id="sec2" style="height: 120vh;">
+	<div id="sec2start" class="d-flex w-100 h-100" style="display: grid;place-items: center;">
+		<div style="width: 65%;">
+		<h1 style="padding: 4vw;">Why do people <br> use Soda?</h1>
+		<div class="d-flex justify-content-around mt-5" style="width: 100%;">
+			<div id="c1" style="padding: 2vw 3vw;background-color: skyblue;border-radius: 80%;border:3px solid">
+				<span>normalize <br> sleep</span>
+			</div>
+			<div id="c2" style="padding: 2vw 3vw;background-color: yellow;border:3px solid">
+				<span>improve <br> emotional state</span>
+			</div>
+			<div id="c3" style="padding: 2vw 3vw;background-color: orangered;border-radius: 80%;border:3px solid">
+				<span>reduce blood <br> plessure</span>
+			</div>
+			<div id="c4" style="padding: 2vw 3vw;background-color: violet;border-radius: 80%;border:3px solid">
+				<span>boost <br> immunity</span>
+			</div>
+		</div>
+		</div>
+		<div style="width: 35%;display: grid;place-items: center;position: relative;">
+			<img src="/images/jumb.jpg" id="jumb" alt="" style="scale: .5;transform: translateX(30vw);width: 25vw;margin-left: 3vw;">
+			<img src="/images/flower.png" alt="" id="flower" style="position: absolute;z-index: 1;width: 5vw;right: 10%;bottom: 0;">
+		</div>
+	</div>
+	<div class="d-flex justify-content-around align-items-center" style="width: 100vw;background-color: rgb(237, 177, 156);height:13vh;position: absolute;bottom: 0;">
+		<img src="images/leaf.png" alt="" style="width: 3vw;height: 3vw;border: 2px solid;padding: .5vw;border-radius: 50%;background-color: rgb(237, 112, 66);">
+		<h4 style="font-weight: bold;">organic incredients</h4>
+		<img src="images/gift.png" alt="" style="width: 3vw;height: 3vw;border: 2px solid;padding: .5vw;border-radius: 50%;background-color: rgb(237, 112, 66);">
+		<h4 style="font-weight: bold;">get coupons</h4>
+		<img src="images/truck.png" alt="" style="width: 3vw;height: 3vw;border: 2px solid;padding: .5vw;border-radius: 50%;background-color: rgb(237, 112, 66);">
+		<h4 style="font-weight: bold;">free worldwide shipping</h4>
+	</div>
+</section>
+
+<section id="sec3" style="width: 100%;height: 110vh;overflow: hidden;color: white;">
+	<div id="sec3back" class="w-100 h-100 bg-dark position-absolute top-0" style="transition: .3s;z-index: -1;scale: .5;"></div>
+	<h1 id="op" style="text-align: center;padding-top: 3vw;font-size: 7vw;color: gray;font-weight: bolder;letter-spacing: 3px;scale: 2;">our products</h1>
+	<div class="d-flex w-100 justify-content-around">
+		<div style="width: 30%;padding: 3vw;">
+			<img src="/images/c2.png" id="ca1" alt="" style="transform: translateX(-150%) scale(2) rotate(-30deg);width: 15vw;margin-left: 4vw;">
+			<h4 class="text-center">PERFFY</h4>
+			<p class="text-center" style="font-size: 1vw;font-weight: bold;color: gray;">
+				"Lemon Zing, Every Sip a Tingling Delight!" </p>
+		</div>
+
+		<div style="width: 30%;padding: 3vw;">
+			<img src="/images/c1.png"  alt="" style="width: 15vw;margin-left: 4vw;">
+			<h4 class="text-center">PERFFY</h4>
+			<p class="text-center" style="font-size: 1vw;font-weight: bold;color: gray;">"Sunshine Fizz: Sip the Spark of Citrus Bliss!"</p>
+		</div>
+
+		<div style="width: 30%;padding: 3vw;">
+			<img src="/images/c3.png" id="ca3" alt="" style="transform: translateX(150%) scale(2) rotate(30deg);width: 15vw;margin-left: 4vw;">
+			<h4 class="text-center">PERFFY</h4>
+			<p class="text-center" style="font-size: 1vw;font-weight: bold;color: gray;">"Elevate Your Refreshment Game!"</p>
+		</div>
+	</div>
+</section>
+<section id="sec4" style="height: 120vh;background-color: white;">
+	<h1 id="howto" style="position: absolute;z-index: 50;;mix-blend-mode: difference;top: -3vw;color: white;font-size: 15vw;">how to use</h1>
+	<div class="d-flex w-100">
+		<div class="w-50" style="margin-top: 45vh;">
+			<div class="d-flex ms-5">
+				<div>
+					<div>
+						<span style="font-size: 1.5vw;border: 5px solid;padding: .5vw;border-radius: 50%;">&#129395;</span>
+						<span style="font-size: 1.5vw;font-weight: bold;" class="ms-3">Sublingually</span>
+					</div>
+					<div class="mt-5">
+						<span style="font-size: 1.5vw;border: 5px solid;padding: .5vw;border-radius: 50%;">&#128541;</span>
+						<span style="font-size: 1.5vw;font-weight: bold;" class="ms-3">Orally</span>
+					</div>
+				</div>
+				<div class="ms-5">
+					<div>
+						<span style="font-size: 1.5vw;border: 5px solid;padding: .5vw;border-radius: 50%;">&#128538;</span>
+						<span style="font-size: 1.5vw;font-weight: bold;" class="ms-3">Transandermally</span>
+					</div>
+					<div class="mt-5">
+						<span style="font-size: 1.5vw;border: 5px solid;padding: .5vw;border-radius: 50%;">&#128565;</span>
+						<span style="font-size: 1.5vw;font-weight: bold;" class="ms-3">Inhaled</span>
+					</div>
+				</div>
+			</div>
+			<img src="images/tennis.jpg" alt="" id="tennis" style="transition: .3s;scale: .5;width: 50vw;margin-top: 3vw;">
+		</div>
+		<div class="w-50">
+			<img src="images/surf.jpg" alt="" id="surf" style="transition: .3s;scale: .5;width: 50vw;">
+		</div>
+	</div>
+</section>
+<section id="sec5" style="display: grid;place-items: center;background-color: rgb(213, 243, 255);">
+	<div id="backcir" style="opacity: .2;width: 50vw;height: 50vw;border-radius: 50%;background-color: aqua;position: absolute;right: -30vw;"></div>
+	<img src="images/cool.png" alt="" style="position: absolute;z-index: 50;top: 5vw;width: 10vw;left: 2vw;" id="coolx">
+	<img src="images/yolo.png" alt="" style="position: absolute;z-index: 50;bottom: -10vw;width: 15vw;left: 12vw;" id="yolo">
+	<div class="d-flex w-100">
+		<div class="w-50 mt-5" style="display: grid;place-items: center;">
+			<img src="images/plant.jpg"  id="plant" alt="" style="width: 20vw;position: absolute;left: 10%;border: 5px solid;">
+			<img src="images/book.jpg" id="book" alt="" style="width: 17vw;position: absolute;left: 19%;top: 10%;border: 5px solid;">
+		</div>
+		<div class="w-50 p-3" id="review" style="margin-top: 20vw;">
+			<p style="font-weight: bold;font-size: 1.2vw;">"This soda is a burst of sunshine in a bottle! The perfect blend of sweet and tangy with a refreshing lemony kick. I can't get enough of it—definitely my go-to beverage for a pick-me-up!"<span style="color: red;margin-left: 2vw;">-Crish</span> </p>
+			<p style="font-weight: bold;font-size: 1.2vw;">"Decent flavor, but a bit too sweet for my liking. If you have a sweet tooth, this might be the soda for you. Personally, I prefer a more subtle taste. The berry notes are there, but they could dial down the sugar." <span style="color: red;margin-left: 2vw;">-Elisha</span></p>
+			<p style="font-weight: bold;font-size: 1.2vw;">"You can't beat the classics, and this cola delivers that timeless taste. It's fizzy, bold, and goes great with any meal. A solid choice for anyone who appreciates the tried-and-true cola experience." <span style="color: red;margin-left: 2vw;">-Yangu</span></p>
+			<p style="font-weight: bold;font-size: 1.2vw;">"Wow, just wow! The mango flavor in this soda is mind-blowing. It's like a tropical party in your mouth. If you're a fan of exotic fruits, this is a must-try. Perfect for hot summer days or whenever you need a taste of the tropics!" <span style="color: red;margin-left: 2vw;">-Martin</span></p>
+			<p style="font-weight: bold;font-size: 1.2vw;">"Wow, just wow! The mango flavor in this soda is mind-blowing. It's like a tropical party in your mouth. If you're a fan of exotic fruits, this is a must-try. Perfect for hot summer days or whenever you need a taste of the tropics!" <span style="color: red;margin-left: 2vw;">-Martin</span></p>
+			<p style="font-weight: bold;font-size: 1.2vw;">"Wow, just wow! The mango flavor in this soda is mind-blowing. It's like a tropical party in your mouth. If you're a fan of exotic fruits, this is a must-try. Perfect for hot summer days or whenever you need a taste of the tropics!" <span style="color: red;margin-left: 2vw;">-Martin</span></p>
+			<p style="font-weight: bold;font-size: 1.2vw;">"Wow, just wow! The mango flavor in this soda is mind-blowing. It's like a tropical party in your mouth. If you're a fan of exotic fruits, this is a must-try. Perfect for hot summer days or whenever you need a taste of the tropics!" <span style="color: red;margin-left: 2vw;">-Martin</span></p>
+		</div>
+	</div>
+</section>
+
+<section id="sec6" style="height: 110vh;background-color: #f9c9bf;">
+<img src="/images/star.png" alt="" id="star2" style="position: absolute;width: 10vw;right: 10vw;top: 5vw;">
+<h1 style="font-size: 15vw;padding: 3vw;">articales</h1>
+<div class="d-flex w-100 ps-5 pe-5">
+	<div class="w-50">
+		<div class="d-flex">
+			<h5 class="bg-light" style="padding: .5vw 2vw;border-radius: 30px;border: 5px solid;">Updated june 16, 2022</h5>
+			<h5 class="ms-5 bg-light" style="padding: .5vw 2vw;border-radius: 30px;border: 5px solid;">2000 views</h5>
+		</div>
+		<h3 style="font-weight: bold;margin-top: 3vw;">Everthing You Need to Know <br> Before nuying a Soda</h3>
+		<p class="mt-5" style="width: 70%;font-weight: bold;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, facere? Saepe iusto exercitationem hic et, placeat ipsum corporis, alias aut odio corrupti magnam aliquid. Labore repudiandae ipsa nam temporibus illum.</p>
+	</div>
+	<div class="w-50">
+		<div class="d-flex">
+			<h5 class="bg-light" style="padding: .5vw 2vw;border-radius: 30px;border: 5px solid;">Updated april 16, 2022</h5>
+			<h5 class="ms-5 bg-light" style="padding: .5vw 2vw;border-radius: 30px;border: 5px solid;">2900 views</h5>
+		</div>
+		<h3 style="font-weight: bold;margin-top: 3vw;">Combining with lots of soda<br> comination</h3>
+		<p class="mt-5" style="width: 70%;font-weight: bold;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, facere? Saepe iusto exercitationem hic et, placeat ipsum corporis, alias aut odio corrupti magnam aliquid. Labore repudiandae ipsa nam temporibus illum.</p>
+	</div>
+</div>
+</section>
+
+
+<script src="index.js"></script>
+</body>
+</html>
